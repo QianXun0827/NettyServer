@@ -1,0 +1,76 @@
+/*操作栏*/
+.operationUl {
+    padding: 0;
+    margin: 0;
+}
+
+.operationInput, .operationButton {
+    margin-top: 2%;
+}
+
+.operationRow {
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.operationLabel {
+    margin: 2.5% 0.5% 0 2%;
+}
+
+.operationButton {
+    margin-left: 1.5%;
+}
+
+/*新增模态框*/
+.modalBodyStyle {
+    padding: 1% 8%;
+}
+
+.addForm {
+    margin-top: 1.3rem;
+}
+
+.addLabel, .editAuditLabel {
+    font-size: 1rem;
+}
+
+.addInput {
+    margin: 2% 0;
+}
+
+.clickCursor {
+    cursor: pointer;
+}
+
+/*图片上传*/
+.proportion {
+    padding-left: 0;
+}
+
+.imgPreview {
+    display: none;
+}
+
+/*预览*/
+.previewModal {
+    display: none;
+}
+
+/*修改*/
+.editAuditLabel {
+    margin-top: 5%;
+}
+
+.editAudit {
+    margin: 1% 2%;
+    font-size: 1rem;
+}
+
+.editAuditLabel, .editAudit {
+    display: none;
+}
+
+.editAuditStatus {
+    margin: 1% 5%;
+}

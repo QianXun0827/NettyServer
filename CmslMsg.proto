@@ -1,0 +1,99 @@
+syntax = "proto2";
+package com.pm.cms.chat.netty.pojo;
+option java_outer_classname = "Msg";
+option optimize_for = SPEED;
+enum MessageType {
+    /**
+     * 客户端登录
+     */
+    CLIENT_LOGIN = 0;
+    /**
+     * 客户端心跳包发往服务器
+     */
+    HEAT_BEAT_CLIENT = 1;
+    /**
+     * 广告屏launcher配置信息
+     */
+    ADS_SETTING = 2;
+    /**
+     * 广告屏发布信息
+     */
+    FODDER_PUBLISH = 3;
+    /**
+     * 广告屏下架信息
+     */
+    FODDER_DOWN = 4;
+}
+
+/**
+ * 登录信息类
+ */
+message LoginMessage {
+    optional string iccid = 1;
+    optional string token = 2;
+    optional uint32 status = 3;
+}
+
+/**
+ * 心跳信息类
+ */
+message PingMessage {
+    optional string iccid = 1;
+    optional string token = 2;
+}
+
+
+/**
+ * 广告屏配置类
+ */
+message AdsSettingMessage {
+    optional string iccid = 1;
+    optional uint32 subareaNum = 2;
+    optional uint32 fodderAreaVoice = 3;
+    optional uint32 status = 4;
+}
+
+/**
+ * 广告屏内容发布类
+ */
+message FodderPublishMessage {
+    optional uint32 fodderId = 1;
+    optional uint32 shelterFodderId = 2;
+    optional string fodderName = 3;
+    optional uint32 publishType = 4;
+    optional uint32 fodderType = 5;
+    optional string iccid = 6;
+    optional string fodderFormat = 7;
+    optional string fodderPath = 8;
+    optional string fodderContext = 9;
+    optional uint32 isVoice = 10;
+    optional uint32 fodderArea = 11;
+    optional uint32 shelterMonitor = 12;
+    optional uint32 fodderBeginTime = 13;
+    optional uint32 fodderEndTime = 14;
+    optional uint32 status = 15;
+}
+
+/**
+ * 广告屏内容下架类
+ */
+message FodderDownMessage {
+    optional string iccid = 1;
+    optional uint32 fodderId = 2;
+    optional uint32 shelterFodderId = 3;
+    optional uint32 shelterMonitor = 4;
+    optional uint32 fodderArea = 5;
+    optional uint32 status = 6;
+}
+
+/**
+ * 消息总类
+ */
+message Message {
+    required MessageType messageType = 1;
+    optional LoginMessage loginMessage = 2;
+    optional PingMessage pingMessage = 3;
+    optional AdsSettingMessage adsSettingMessage = 4;
+    optional FodderPublishMessage fodderPublishMessage = 5;
+    optional FodderDownMessage fodderDownMessage = 6;
+}

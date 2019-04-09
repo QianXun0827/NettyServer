@@ -1,0 +1,43 @@
+#indexr {
+    margin-top: 5%;
+}
+
+#imgs img {
+    width: 90%;
+    height: 100%;
+    margin-left: 7%;
+}
+
+#fontSize {
+    line-height: 120px;
+    font-size: 25px;
+    margin-top: 2%;
+    font-family: KaiTi;
+    color: #1d2124;
+    text-shadow: 2px 2px 5px #4f5962;
+}
+
+#modalBody {
+    height: 510px;
+    overflow-y: scroll;
+}
+
+/*侧边栏*/
+.imgLogo {
+    opacity: .8;
+}
+
+.current {
+    background: lightseagreen;
+    border-radius: 0.25rem;
+    opacity: 1;
+}
+
+/*底部*/
+.indexFooter {
+    text-align: center;
+}
+
+body {
+    min-height: 500px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>16云</title>
+    <!-- 图标 -->
+    <link rel="shortcut icon" href="/image/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="/css/form-elements.css"/>
+    <link rel="stylesheet" href="/css/sweetalert2.min.css"/>
+    <link rel="stylesheet" href="/css/login.css"/>
+</head>
+
+<!-- Top menu -->
+<nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <!--<span class="brand-text">-->
+                <!--<img src="/image/titleloho.png" alt="AdminLTE Logo" class="navbar-brand">-->
+                <!--16云-->
+                <img src="/image/pmade.png" alt="AdminLTE Logo" class="navbar-brand">
+            <!--</span>-->
+        </div>
+    </div>
+</nav>
+
+<!-- Top content -->
+<div class="top-content">
+    <div class="inner-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-10 form-box offset-md-7 offset-sm-1">
+                    <div class="formTitle">
+                        <span class="top-text">
+                            <img src="/image/titleloho.png" alt="AdminLTE Logo" class="">
+                            16云
+                        </span>
+                    </div>
+                    <div class="form-top">
+                        <div class="form-top-left">
+                            <h3>登 录</h3>
+                            <p>请填写用户名和密码：</p>
+                        </div>
+                        <div class="form-top-right"><i class="fa fa-pencil"></i></div>
+                    </div>
+                    <div class="form-bottom">
+                        <form role="form" action="" method="post" class="registration-form">
+                            <div class="form-group">
+                                <label class="sr-only" for="form-useName">用户名</label>
+                                <input type="text" name="form-useName" placeholder="请输入用户名..." class="form-control"
+                                       id="form-useName" oninput="preSql(this)"/>
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="form-password">密码</label>
+                                <input type="password" name="form-password" placeholder="请输入密码..." class="form-control"
+                                       id="form-password" oninput="preSql(this)"/>
+                            </div>
+                            <div class="offset-9">
+                                <button type="button" class="btn" id="loginClick">登录</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerLogin">
+        <!--<img src="${basePath}/common/images/pmade.png">  <br/>-->
+        版权所有Copyright &copy;深圳市普铭智能技术有限公司 <a href="http://www.miibeian.gov.cn/" target="_blank"> 粤ICP备09106612号</a>
+    </div>
+</div>
+
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="/js/ajax.js"></script>
+<!--<script src="https://cdn.staticfile.org/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>-->
+<!--<script src="https://cdn.staticfile.org/retina.js/2.1.3/retina.min.js"></script>-->
+<script src="/js/sweetalert2.min.js"></script>
+<script src="/js/login.js"></script>
+
+</body>
+</html>

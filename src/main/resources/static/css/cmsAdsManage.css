@@ -1,0 +1,64 @@
+/*操作栏*/
+.manageUl {
+    padding: 0;
+    margin: 0;
+}
+
+.manageInput, .manageButton {
+    margin-top: 2%;
+}
+
+.manageRow {
+    width: 100%;
+    margin: 0.5% 2% 0.5% 1.5%;
+}
+
+.manageLabel {
+    margin: 2.5% 0.5% 0 1.5%;
+}
+
+.manageButton {
+    margin-left: 1.5%;
+}
+
+/*发布模态框*/
+.sedShelter {
+    margin-bottom: 5%;
+    background: #1c94c4;
+    color: #fff;
+    text-align: center;
+}
+
+.sedCardLabel {
+    margin: 0 2%;
+}
+
+.sedTime {
+    display: none;
+}
+
+.sedTimeLabel {
+    margin: 2%;
+    font-size: 1rem;
+}
+
+.sedEndTime {
+    margin-top: 15px;
+}
+
+.clickCursor {
+    cursor: pointer;
+}
+
+.PlayMode {
+    font-size: 1rem;
+    margin: 5% 0;
+}
+
+.sedButton {
+    margin: 0 2% 2% 2%;
+}
+
+.fodderUpload {
+    margin-top: 3%;
+}

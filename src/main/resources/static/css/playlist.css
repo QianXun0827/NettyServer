@@ -1,0 +1,44 @@
+/*操作栏*/
+.manageUl {
+    padding: 0;
+    margin: 0;
+}
+
+.manageInput, .manageButton {
+    margin-top: 2%;
+}
+
+.manageRow {
+    width: 100%;
+    margin: 2% 2% 2% 1.5%;
+}
+
+.manageLabel {
+    margin: 2.5% 0.5% 0 1.5%;
+}
+
+.manageButton {
+    margin-left: 1.5%;
+}
+
+/*分区设置*/
+.PlayMode {
+    font-size: 1rem;
+    margin: 5% 0;
+}
+
+.rowCursor {
+    text-align: center;
+}
+
+.areaChooseLabel {
+    font-size: 16px;
+}
+
+.areaCursor {
+    margin-left: 2%;
+}
+
+.clickCursor {
+    cursor: pointer;
+}

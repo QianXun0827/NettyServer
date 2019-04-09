@@ -1,0 +1,69 @@
+server:
+  port: 8095
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+  datasource:
+   druid:
+   #正式外网
+#    url: jdbc:mysql://47.99.144.171:8096/cms?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    #测试外网
+#    url: jdbc:mysql://47.98.225.240:3306/cms?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+#     测试内网
+    url: jdbc:mysql://172.16.237.67:3306/cms?useUnicode=true&serverTimezone=GMT&characterEncoding=utf8&useSSL=false
+    #正式内网
+#    url: jdbc:mysql://172.16.137.177:3306/cms?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: PMroot888!
+    initial-size: 5
+    max-active: 20
+    min-idle: 10
+    max-wait: 5000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: true
+    testOnReturn: false
+    filters: stat,wall,log4j
+    filter:
+      stat:
+        log-slow-sql: true
+        slow-sql-millis: 2000
+  redis:
+    password: PMReDis888
+    database: 0
+    jedis:
+      pool:
+        max-active: 30
+        max-wait: -1
+        max-idle: 15
+        min-idle: 0
+    timeout: 10000
+    cluster:
+      nodes:
+          #测试redis
+        - 47.98.225.240:7000
+        - 47.98.225.240:7001
+        - 47.98.225.240:7002
+        - 47.98.225.240:7003
+        - 47.98.225.240:7004
+        - 47.98.225.240:7005
+        #正式redis
+#        - 172.16.137.177:7000
+#        - 172.16.137.177:7001
+#        - 172.16.137.177:7002
+#        - 172.16.237.69:7003
+#        - 172.16.237.69:7004
+#        - 172.16.237.69:7005
+
+mybatis:
+  type-aliases-package: com.pm.mc.pojo
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+
+
+
